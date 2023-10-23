@@ -77,7 +77,7 @@ BONUS: Bist du in der Lage,
 - das gesamte Inventar mit Preisen auszudrucken? 
 
 - nur Produkte auszudrucken, deren Preis zB genau 1.49 ist?
-- Welches Konstrukt brauchst du hierfür?
+- Welche Konstrukte brauchst du hierfür?
 
 </details>
 
@@ -95,8 +95,46 @@ Sie könnten wie folgt heißen:
 - `removeProduct()`
 - `doesProductExist()`
 - `doesPriceExist()`
+- `printProductsByPrice()`
+
 
 Überlege dir, welche Funktionen was für return-Werte brauchen und wo Parameter übergeben werden müssen.
+</details>
+
+---
+
+<details>
+<summary> <b> Woche 4 - If Else, When </b> </summary>
+
+Schreibe in Funktionen folgende Features:
+
+1. Altersüberprüfung: `purchaseAllowed(name: String, age: Int)` - Prüft, ob Kunde namens `name` mit dem alter `age` über 6 Jahre alt ist. Wenn nicht, wird eine Nachricht gedruckt, dass `name` nochmal mit den Eltern wiederkommen soll.
+
+
+2. `calculateDiscount(customerAge: Int, isRegularCustomer: Boolean) : Double` - prüft, ob ein Kunde einen Rabatt erhält und rechnet den Rabatt aus nach folgendem Schema: 
+   - ist der Kunde über 60 und ein Stammkunde: Rabatt von 60%
+   - Kunde nur über 60: Rabatt von 10%
+   - Kunde nur Stammkunde: Rabatt von 20%
+   - Kunde unter 12: Rabatt von 15%
+
+
+3. Rabattaktionen:
+Die Variable aus Aufgabe 1, die angibt, ob es eine Rabattaktion gibt oder nicht, soll nun nicht einfach manuell gesetzt werden, sondern Logik bekommen.
+
+   - Schreibe eine Funktion `checkDiscountDays`, die einen Wochentag übergeben bekommt und eine passende Nachricht in die Konsole druckt für folgende Szenarien:
+     - ist der Wochentag Montag, Mittwoch oder Freitag: es gibt Rabatte.
+     - ist der Wochentag Dienstag, Donnerstag oder Samstag: es gibt keine Rabatte
+     - ist der Wochentag Sonntag: der Laden hat geschlossen, folglich gibt es keine Rabatte
+    - Benutze hierzu  `when`! Gerne auch zur Übung zusätzlich mit `if else` lösen.
+    - Speichere das Ergebnis der Funktion am Ende in deine in Aufgabe 1 erstellte Variable.
+
+
+4. Einkauf: Simuliere einen Einkauf durch einen Kunden. Schreibe dazu eine Funktion `buy(budget: Double, price: Double)`, die folgendes tut:
+   - das Kundenbudget und den Preis des Produkts ausdruckt
+   - prüft, ob der Kunde genug Geld dabei hat, um sich ein Produkt zu leisten. wenn ja:
+     - Den Preis vom Budget abziehen und in einer neuen Variable speichern
+     - entsprechende Nachrichten in die Konsole drucken, dass das Produkt gekauft wurde und er Kunde noch x Euro übrig hat
+   - wenn nein: Bescheid sagen, dass das Produkt zu teuer ist, weil dem Kunden x Euro fehlen 
 </details>
 
 
