@@ -86,6 +86,17 @@ BONUS: Bist du in der Lage,
 <summary> <b> Woche 3 - Funktionen </b> </summary>
 
 Lagere nun die gesamte Funktionalität, die du programmiert hast, in Funktionen aus.
+
+Sie könnten wie folgt heißen:
+
+- `displayInventory()`
+- `addProduct()`
+- `updatePrice()`
+- `removeProduct()`
+- `doesProductExist()`
+- `doesPriceExist()`
+
+Überlege dir, welche Funktionen was für return-Werte brauchen und wo Parameter übergeben werden müssen.
 </details>
 
 
