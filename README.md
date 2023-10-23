@@ -70,7 +70,7 @@ Suche in den LiveBeispielen aus der Vorlesung heraus, was die beiden sind. Nutze
 
 - Achte darauf, dass es sich bei dieser neuen Variable um den korrekten Datentypen, eine Liste, handelt!
 
-8. Was ist eigentlich nochmal ein Set im Unterschied zu einer Liste/Map? 
+8. Was ist eigentlich nochmal ein Set im Unterschied zu einer Liste/Map?
 
 BONUS: Bist du in der Lage, 
 
@@ -85,7 +85,7 @@ BONUS: Bist du in der Lage,
 <details>
 <summary> <b> Woche 3 - Funktionen </b> </summary>
 
-Lagere nun die gesamte Funktionalität, die du programmiert hast, in Funktionen aus.
+Lagere nun die gesamte Funktionalität, die du programmiert hast, in Funktionen in der Datei `Functions.kt` aus.
 
 Sie könnten wie folgt heißen:
 
@@ -106,35 +106,137 @@ Sie könnten wie folgt heißen:
 <details>
 <summary> <b> Woche 4 - If Else, When </b> </summary>
 
-Schreibe in Funktionen folgende Features:
+Schreibe folgende Funktionen in `IfElsWhen.kt`:
 
 1. Altersüberprüfung: `purchaseAllowed(name: String, age: Int)` - Prüft, ob Kunde namens `name` mit dem alter `age` über 6 Jahre alt ist. Wenn nicht, wird eine Nachricht gedruckt, dass `name` nochmal mit den Eltern wiederkommen soll.
 
 
-2. `calculateDiscount(customerAge: Int, isRegularCustomer: Boolean) : Double` - prüft, ob ein Kunde einen Rabatt erhält und rechnet den Rabatt aus nach folgendem Schema: 
-   - ist der Kunde über 60 und ein Stammkunde: Rabatt von 60%
-   - Kunde nur über 60: Rabatt von 10%
-   - Kunde nur Stammkunde: Rabatt von 20%
-   - Kunde unter 12: Rabatt von 15%
+2. `calculateDiscount(customerAge: Int, isRegularCustomer: Boolean) : Double` - prüft, ob ein Kunde einen Rabatt erhält und rechnet den Rabatt aus nach folgendem Schema:
+    - ist der Kunde über 60 und ein Stammkunde: Rabatt von 60%
+    - Kunde nur über 60: Rabatt von 10%
+    - Kunde nur Stammkunde: Rabatt von 20%
+    - Kunde unter 12: Rabatt von 15%
+- Der Rabatt soll am Ende zurückgegeben werden! (`return`)
 
 
 3. Rabattaktionen:
-Die Variable aus Aufgabe 1, die angibt, ob es eine Rabattaktion gibt oder nicht, soll nun nicht einfach manuell gesetzt werden, sondern Logik bekommen.
+   Die Variable aus Aufgabe 1, die angibt, ob es eine Rabattaktion gibt oder nicht, soll nun nicht einfach manuell gesetzt werden, sondern Logik bekommen.
 
-   - Schreibe eine Funktion `checkDiscountDays`, die einen Wochentag übergeben bekommt und eine passende Nachricht in die Konsole druckt für folgende Szenarien:
-     - ist der Wochentag Montag, Mittwoch oder Freitag: es gibt Rabatte.
-     - ist der Wochentag Dienstag, Donnerstag oder Samstag: es gibt keine Rabatte
-     - ist der Wochentag Sonntag: der Laden hat geschlossen, folglich gibt es keine Rabatte
+    - Schreibe eine Funktion `checkDiscountDays`, die einen Wochentag übergeben bekommt und eine passende Nachricht in die Konsole druckt für folgende Szenarien:
+        - ist der Wochentag Montag, Mittwoch oder Freitag: es gibt Rabatte.
+        - ist der Wochentag Dienstag, Donnerstag oder Samstag: es gibt keine Rabatte
+        - ist der Wochentag Sonntag: der Laden hat geschlossen, folglich gibt es keine Rabatte
     - Benutze hierzu  `when`! Gerne auch zur Übung zusätzlich mit `if else` lösen.
     - Speichere das Ergebnis der Funktion am Ende in deine in Aufgabe 1 erstellte Variable.
 
 
 4. Einkauf: Simuliere einen Einkauf durch einen Kunden. Schreibe dazu eine Funktion `buy(budget: Double, price: Double)`, die folgendes tut:
-   - das Kundenbudget und den Preis des Produkts ausdruckt
-   - prüft, ob der Kunde genug Geld dabei hat, um sich ein Produkt zu leisten. wenn ja:
-     - Den Preis vom Budget abziehen und in einer neuen Variable speichern
-     - entsprechende Nachrichten in die Konsole drucken, dass das Produkt gekauft wurde und er Kunde noch x Euro übrig hat
-   - wenn nein: Bescheid sagen, dass das Produkt zu teuer ist, weil dem Kunden x Euro fehlen 
+    - das Kundenbudget und den Preis des Produkts ausdruckt
+    - prüft, ob der Kunde genug Geld dabei hat, um sich ein Produkt zu leisten. wenn ja:
+        - Den Preis vom Budget abziehen und in einer neuen Variable speichern
+        - entsprechende Nachrichten in die Konsole drucken, dass das Produkt gekauft wurde und er Kunde noch x Euro übrig hat
+    - wenn nein: Bescheid sagen, dass das Produkt zu teuer ist, weil dem Kunden x Euro fehlen
 </details>
+
+---
+
+<details>
+<summary> <b> Woche 5 - Schleifen I: Lesende Funktionen </b> </summary>
+
+In der Datei `Data.kt` findest du einige Datenstrukturen mit Produkten/Mitarbeitern.
+
+Durch diese Datenstrukturen wollen wir jeweils mit Schleifen durchgehen.
+
+Schreibe **Funktionen**, die die jeweiligen Aufgaben erfüllen, in die Datei `Schleifen.kt`
+
+
+1.  Mitarbeiter filtern: Schreibe eine Funktion, die alle Mitarbeiter ausgibt, deren Namen mit einem bestimmten Buchstaben beginnen, welcher der Funktion übergeben werden kann. Verwende eine Schleife oder ein passendes Lambda in einer Higher-Order Function.
+
+2. Längster Produktname pro Kategorie: 
+Finde den längsten Produktnamen in jeder Kategorie und gib ihn aus. Du kannst zB eine Schleife verwenden, um durch die Produktkategorien zu iterieren und dann maxBy verwenden, um den längsten Namen in jeder Kategorie zu finden.
+
+3. Produkte nach Kategorien filtern: Schreibe eine Funktion, die Produkte einer bestimmten Kategorie filtert und ausgibt. Der Benutzer sollte die Kategorie auswählen können, und die Funktion sollte die entsprechenden Produkte anzeigen.
+
+4. Mitarbeiterliste alphabetisch sortieren
+Sortiere die Liste der Mitarbeiter alphabetisch und gib sie aus. Du kannst die sorted-Funktion oder eine Schleife verwenden, um die Sortierung durchzuführen.
+
+5. Produkte nach Länge filtern:
+Filtere Produkte in jeder Kategorie basierend auf ihrer Länge (also der Länge ihres Namens). Zum Beispiel könntest du Produkte auswählen, die weniger als 6 Zeichen lang sind. Verwende filter und map, um die Filterung durchzuführen.
+
+6. Gesamtanzahl der Produkte:
+Berechne die Gesamtanzahl der Produkte in allen Kategorien. Du kannst eine Schleife verwenden, um durch die Kategorien und Produkte zu iterieren und die Summe berechnen.
+
+7. Zufälliges Produkt pro Kategorie:
+Schreibe eine Funktion, die zufällig ein Produkt aus jeder Kategorie auswählt und ausgibt. Verwende die random()-Funktion, um ein zufälliges Element aus der Liste von Produkten in jeder Kategorie zu wählen.
+
+8. Produkte nach Anfangsbuchstaben gruppieren:
+Gruppiere die Produkte in jeder Kategorie nach dem Anfangsbuchstaben und gib die Gruppen aus. Zum Beispiel könntest du alle Produkte auflisten, die mit "A" beginnen, dann mit "B" usw. Verwende eine Schleife oder Higher-Order Functions, um die Gruppierung durchzuführen.
+
+9. Anzahl der Produkte pro Kategorie:
+Berechne die Anzahl der Produkte in jeder Kategorie und gib sie aus. Du kannst die count()-Funktion oder eine Schleife verwenden, um die Anzahl der Produkte in jeder Kategorie zu zählen.
+
+
+</details>
+
+---
+
+<details>
+<summary> <b> Woche 5 - Schleifen II: Schreibende Funktionen </b> </summary>
+
+Die Datenstrukturen sind noch nicht bearbeitbar.
+
+Was muss eine List oder Map jeweils sein, damit man darauf auch schreibende Operationen ausführen kann?
+
+Erstelle jeweils eine mutable Kopie von `produktMap` und von `employees`, nenne sie jeweils `cProduktMap` und `cEmployees`.
+
+Danach führe folgende Operationen durch:
+
+10. Produkte hinzufügen:
+Schreibe eine Funktion, die es den Benutzern ermöglicht, neue Produkte und Kategorien hinzuzufügen. Der Benutzer sollte den Produktnamen und die Kategorie eingeben können, und die Funktion fügt das Produkt zur Map `cProductMap` hinzu.
+
+11. Produkte entfernen:
+Erstelle eine Funktion, die es den Benutzern ermöglicht, Produkte aus den Kategorien zu entfernen. Der Benutzer sollte den Produktnamen und die Kategorie eingeben können, und die Funktion entfernt das Produkt aus der Map `cProductMap`.
+
+12. Produkte sortieren:
+Schreibe eine Funktion, die Produkte in jeder Kategorie alphabetisch sortiert. Du kannst die sort()-Funktion oder eine eigene Sortierlogik verwenden, um die Produkte in jeder Kategorie zu sortieren.
+
+13. Kategorie umbenennen:
+Ermögliche es den Benutzern, den Namen einer Kategorie zu ändern. Der Benutzer sollte die alte und die neue Kategorie eingeben können, und die Funktion aktualisiert die Map `cProductMap`.
+
+14. Produkte in den Warenkorb legen:
+Erstelle eine Funktion, die es den Benutzern ermöglicht, Produkte in einen Warenkorb zu legen. Der Warenkorb kann als Mutable List repräsentiert werden. Der Benutzer sollte den Produktnamen und die Anzahl eingeben können, und die Funktion fügt das Produkt mit der entsprechenden Anzahl zum Warenkorb hinzu.
+
+15. Warenkorb verwalten:
+Schreibe eine Funktion, die es den Benutzern ermöglicht, Produkte aus dem Warenkorb zu entfernen oder die Anzahl zu ändern. Der Benutzer sollte den Produktnamen und die gewünschte Aktion (Entfernen oder Ändern der Anzahl) eingeben können.
+
+16. Rabattaktion:
+Führe eine Rabattaktion durch, bei der die Preise für Produkte in einer bestimmten Kategorie um einen bestimmten Prozentsatz reduziert werden (dafür kannst du deine bereits geschriebenen Funktionen zum Thema Rabatt nutzen). Die Benutzer sollten die Kategorie und den Rabattprozentsatz eingeben können, und die Funktion aktualisiert die Preise in der Map `cProductMap`.
+</details>
+
+---
+
+<details>
+<summary> <b> Woche 6 - Objektorientierte Programmierung </b> </summary>
+
+Jetzt kommt Objektorientierung ins Spiel.
+
+Committe und pushe bevor du hiermit anfängst deine bisherigen Lösungen! Wir refactoren jetzt den gesamten Code!
+
+Alle unsere Produkte, die bisher jeweils lediglich Strings sind, sollen jetzt in tatsächliche Produkte mit einem Namen und einem Preis umgewandelt werden.
+
+1. Produkt: Erstelle eine neue Datei, die Klasse `Produkt.kt`, der du im Primären Konstruktor die Eigenschaften `bezeichner`, `preis` und `kategorie` gibst. 
+- Ersetze in unseren Datenstrukturen in der Datei `Data.kt` alle Strings, die zuvor als Platzhalter für richtige Produkte enthalten waren, mit tatsächlichen Produkten.
+
+Jetzt werden einige Fehler auftauchen.
+
+Du musst die meisten deiner bisher Funktionen jetzt so refactoren, dass sie mit dem neuen Datentyp Produkt funktionieren. Behebe alle Fehler.
+
+2. Mitarbeiter: Erstelle eine Klasse `Mitarbeiter.kt`, der du im Primären Konstruktor die Eigenschaften `name` und `alter` gibst.
+- Ersetze die Strings in der Liste `mitarbeiter` mit tatsächlichen Instanzen der Klasse Mitarbeiter. Wenn du noch Nerven dazu hast, schreibe dazu eine Funktion, die ein zufälliges Alter zwischen 16 und 70 ausgibt, und rufe diese auf, statt manuell ein Alter bei jedem Mitarbeiter reinzuschreiben.
+
+</details>
+Viel Erfolg!
+
+
 
 

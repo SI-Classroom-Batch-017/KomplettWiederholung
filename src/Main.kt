@@ -1,5 +1,5 @@
 // Grundbestand im Store als Map mit Produkt-String-Keys und Double-Preis-Values
-val storeInventory = mutableMapOf(
+val inventar = mutableMapOf(
     "Apfel" to 1.99,
     "Banane" to 0.99,
     "Orange" to 1.49,
