@@ -234,6 +234,11 @@ Du musst die meisten deiner bisher Funktionen jetzt so refactoren, dass sie mit 
 2. Mitarbeiter: Erstelle eine Klasse `Mitarbeiter.kt`, der du im Primären Konstruktor die Eigenschaften `name` und `alter` gibst.
 - Ersetze die Strings in der Liste `mitarbeiter` mit tatsächlichen Instanzen der Klasse Mitarbeiter. Wenn du noch Nerven dazu hast, schreibe dazu eine Funktion, die ein zufälliges Alter zwischen 16 und 70 ausgibt, und rufe diese auf, statt manuell ein Alter bei jedem Mitarbeiter reinzuschreiben.
 
+3. In Produkt, erstelle eine Funktion `printInfo()`, die uns alle Informationen über das Produkt ausdruckt.
+
+4. Erstelle jetzt die Kindklassen Elektronik, Kleidung, Nahrung, Buch und Haushalt, die von Produkt erben und jeweils ihre Kategorie als String in der Variable `kategorie` als Default Wert stehen haben.
+
+
 </details>
 Viel Erfolg!
 
