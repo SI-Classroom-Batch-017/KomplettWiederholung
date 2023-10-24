@@ -53,9 +53,9 @@ Suche in den LiveBeispielen aus der Vorlesung heraus, was die beiden sind. Nutze
   - Um dies zu tun, gibt es 2 unterschiedliche Syntaxen.
    - Suche in den LiveBeispielen aus der Vorlesung heraus, was die beiden sind. Nutze beide mind. 1x, für das 3. Produkt kannst du die benutzen, die dir besser gefällt.
 
-4. Produkt entfernen: Entferne das teuerste Produkt mit der richtigen Funktion dafür
+4. Produkt entfernen: Entferne das teuerste Produkt (du musst das Programm nicht rausfinden lassen, welches das teuerste ist, sondern kannst es selbst identifizieren)
 
-5. Prüfe, ob das Produkt "Kaugummi" noch in der Map existiert und printe eine entsprechende Nachricht in die Konsole aus.
+5. Prüfe, ob das Produkt "Kaugummi" noch in der Map existiert und printe eine entsprechende Nachricht in die Konsole aus. Dafür brauchst du if else.
 
 
 6. Prüfe, ob es ein Produkt mit dem Preis 1.49 in der Map gibt und drucke eine entsprechende Nachricht in der Konsole aus.
@@ -72,7 +72,7 @@ Suche in den LiveBeispielen aus der Vorlesung heraus, was die beiden sind. Nutze
 
 8. Was ist eigentlich nochmal ein Set im Unterschied zu einer Liste/Map?
 
-BONUS: Bist du in der Lage, 
+BONUS: Bist du schon in der Lage, 
 
 - das gesamte Inventar mit Preisen auszudrucken? 
 
