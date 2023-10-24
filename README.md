@@ -149,7 +149,7 @@ Durch diese Datenstrukturen wollen wir jeweils mit Schleifen durchgehen.
 Schreibe **Funktionen**, die die jeweiligen Aufgaben erfüllen, in die Datei `Schleifen.kt`
 
 
-1.  Mitarbeiter filtern: Schreibe eine Funktion, die alle Mitarbeiter ausgibt, deren Namen mit einem bestimmten Buchstaben beginnen, welcher der Funktion übergeben werden kann. Verwende eine Schleife oder ein passendes Lambda in einer Higher-Order Function.
+1.  Mitarbeiter filtern: Schreibe eine Funktion, die alle Mitarbeiter ausgibt, deren Namen mit einem bestimmten Buchstaben beginnen, welcher der Funktion als `Char` übergeben werden kann. Verwende eine Schleife oder ein passendes Lambda in einer Higher-Order Function. Tipp: es gibt eine Funktion namens `startsWith
 
 2. Längster Produktname pro Kategorie: 
 Finde den längsten Produktnamen in jeder Kategorie und gib ihn aus. Du kannst zB eine Schleife verwenden, um durch die Produktkategorien zu iterieren und dann maxBy verwenden, um den längsten Namen in jeder Kategorie zu finden.
@@ -186,9 +186,9 @@ Die Datenstrukturen sind noch nicht bearbeitbar.
 
 Was muss eine List oder Map jeweils sein, damit man darauf auch schreibende Operationen ausführen kann?
 
-Erstelle jeweils eine mutable Kopie von `produktMap` und von `employees`, nenne sie jeweils `cProduktMap` und `cEmployees`.
+Erstelle jeweils eine mutable Kopie von `produktMap` und von `employees`, nenne sie jeweils `cProduktMap` und `cEmployees`. Denk daran, dass die einzelnen Listen in `cProduktMap` auch noch mutable gemacht werden müssen.
 
-Danach führe folgende Operationen durch:
+Danach führe folgende Operationen in `SchleifenII.kt` durch:
 
 10. Produkte hinzufügen:
 Schreibe eine Funktion, die es den Benutzern ermöglicht, neue Produkte und Kategorien hinzuzufügen. Der Benutzer sollte den Produktnamen und die Kategorie eingeben können, und die Funktion fügt das Produkt zur Map `cProductMap` hinzu.
@@ -205,11 +205,6 @@ Ermögliche es den Benutzern, den Namen einer Kategorie zu ändern. Der Benutzer
 14. Produkte in den Warenkorb legen:
 Erstelle eine Funktion, die es den Benutzern ermöglicht, Produkte in einen Warenkorb zu legen. Der Warenkorb kann als Mutable List repräsentiert werden. Der Benutzer sollte den Produktnamen und die Anzahl eingeben können, und die Funktion fügt das Produkt mit der entsprechenden Anzahl zum Warenkorb hinzu.
 
-15. Warenkorb verwalten:
-Schreibe eine Funktion, die es den Benutzern ermöglicht, Produkte aus dem Warenkorb zu entfernen oder die Anzahl zu ändern. Der Benutzer sollte den Produktnamen und die gewünschte Aktion (Entfernen oder Ändern der Anzahl) eingeben können.
-
-16. Rabattaktion:
-Führe eine Rabattaktion durch, bei der die Preise für Produkte in einer bestimmten Kategorie um einen bestimmten Prozentsatz reduziert werden (dafür kannst du deine bereits geschriebenen Funktionen zum Thema Rabatt nutzen). Die Benutzer sollten die Kategorie und den Rabattprozentsatz eingeben können, und die Funktion aktualisiert die Preise in der Map `cProductMap`.
 </details>
 
 ---
