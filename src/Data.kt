@@ -24,3 +24,12 @@ val produktMap: Map<String,List<String>> = mapOf(
     "Haushalt" to listOf("Staubsauger", "Kaffeemaschine", "Töpfe", "Messer", "Waschmaschine")
 )
 
+val cMitarbeiterListe = mitarbeiterListe.toMutableList()
+
+val cProductMap: MutableMap<String,List<String>> = mutableMapOf(
+    "Elektronik" to mutableListOf("Smartphone", "Laptop", "Tablet"),
+    "Kleidung" to mutableListOf("Hose", "Jacke", "Kleid"),
+    "Nahrung" to mutableListOf("Apfel", "Brot", "Milch"),
+    "Bücher" to mutableListOf("Romane", "Sachbücher", "Krimis", "Fantasy", "Biografien"),
+    "Haushalt" to mutableListOf("Staubsauger", "Kaffeemaschine", "Töpfe", "Messer", "Waschmaschine")
+)

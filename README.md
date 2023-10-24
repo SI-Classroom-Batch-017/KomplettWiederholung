@@ -72,10 +72,10 @@ Suche in den LiveBeispielen aus der Vorlesung heraus, was die beiden sind. Nutze
 
 8. Was ist eigentlich nochmal ein Set im Unterschied zu einer Liste/Map?
 
-BONUS: Bist du schon in der Lage,
 
-- das gesamte Inventar mit Preisen Zeile für Zeile auszudrucken?
+BONUS: Bist du schon in der Lage, 
 
+- das gesamte Inventar mit Preisen Zeile für Zeile auszudrucken? 
 - nur alle Produkte auszudrucken, deren Preis zB genau 1.49 ist?
 - Welche Konstrukte brauchst du hierfür?
 
@@ -203,7 +203,8 @@ Danach führe folgende Operationen in `SchleifenII.kt` durch:
     Ermögliche es den Benutzern, den Namen einer Kategorie zu ändern. Der Benutzer sollte die alte und die neue Kategorie eingeben können, und die Funktion aktualisiert die Map `cProductMap`.
 
 14. Produkte in den Warenkorb legen:
-    Erstelle eine Funktion, die es den Benutzern ermöglicht, Produkte in einen Warenkorb zu legen. Der Warenkorb kann als Mutable List repräsentiert werden. Der Benutzer sollte den Produktnamen und die Anzahl eingeben können, und die Funktion fügt das Produkt mit der entsprechenden Anzahl zum Warenkorb hinzu.
+
+Erstelle eine Funktion, die es den Benutzern ermöglicht, Produkte in einen Warenkorb zu legen. Der Warenkorb kann als Mutable List repräsentiert werden. Der Benutzer sollte den Produktnamen und die Anzahl eingeben können, und die Funktion fügt das Produkt mit der entsprechenden Anzahl zum Warenkorb hinzu.
 
 </details>
 
