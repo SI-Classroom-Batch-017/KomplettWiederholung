@@ -74,9 +74,9 @@ Suche in den LiveBeispielen aus der Vorlesung heraus, was die beiden sind. Nutze
 
 BONUS: Bist du schon in der Lage, 
 
-- das gesamte Inventar mit Preisen auszudrucken? 
+- das gesamte Inventar mit Preisen Zeile für Zeile auszudrucken? 
 
-- nur Produkte auszudrucken, deren Preis zB genau 1.49 ist?
+- nur alle Produkte auszudrucken, deren Preis zB genau 1.49 ist?
 - Welche Konstrukte brauchst du hierfür?
 
 </details>
@@ -89,13 +89,12 @@ Lagere nun die gesamte Funktionalität, die du programmiert hast, in Funktionen 
 
 Sie könnten wie folgt heißen:
 
-- `displayInventory()`
+- `displayStore()`
 - `addProduct()`
 - `updatePrice()`
 - `removeProduct()`
-- `doesProductExist()`
-- `doesPriceExist()`
-- `printProductsByPrice()`
+- `doesProductExist()` - soll für alle Produkte, nicht nur Kaugummi funktionieren
+- `doesPriceExist()` - soll für alle Preise, nicht nur 1.49 gelten
 
 
 Überlege dir, welche Funktionen was für return-Werte brauchen und wo Parameter übergeben werden müssen.
