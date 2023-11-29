@@ -80,7 +80,23 @@ BONUS: Bist du schon in der Lage,
 - Welche Konstrukte brauchst du hierfür?
 
 </details>
+---
+<details>
+<summary> <b> Null & Null Safety </b> </summary>
 
+1. Lege eine List<String?> an und füge einige null und nicht-null Werte hinzu. Gib die Liste aus.
+
+2. Verwende den Safe Call Operator, um die Länge jedes Strings in der oben erstellten Liste zu bekommen, ohne dass das Programm abstürzt.
+
+3. Verwende den Elvis Operator, um sicherzustellen, dass die Länge jedes Strings in der Liste einen Wert hat. Wenn der String null ist, soll die Länge als -1 betrachtet werden.
+
+4. Versuche die Länge eines null Strings mit dem Non-Null Assertion Operator zu bekommen und beobachte, was passiert.
+
+5. Verwende if-else Bedingungen, um zu überprüfen, ob eine Variable null ist. Wenn sie null ist, setze sie auf eine Standardzeichenkette und gib die Länge aus. Wenn sie nicht null ist, gib einfach die Länge aus.
+
+6. Verwende repeat um eine Liste von Strings zu erzeugen, die abwechselnd null und nicht-null Werte enthält. Berechne dann die durchschnittliche Länge der nicht-null Strings (hierfür brauchst du eine Schleife oder ein Lambda).
+
+</details>
 ---
 <details>
 <summary> <b> Woche 3 - Funktionen </b> </summary>
