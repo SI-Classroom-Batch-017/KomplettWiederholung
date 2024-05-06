@@ -1,5 +1,5 @@
 <h1 align="center">Grundlagen der Programmierung</h1>
-<h3 align="center">Wiederholungswoche: Store Programmieren</h3>
+<h3 align="center">Wiederholungswoche: Alle bisherigen Themen</h3>
 <br>
 
 
